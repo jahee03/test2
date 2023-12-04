@@ -16,7 +16,8 @@ public class MyCarProgram {
 
     public void run() {
         ReviewManager.getInstance().readAll("Review.txt", scan -> new Review());
-        ReviewManager.getInstance().printAll();
+//        ReviewManager.getInstance().printAll();
+        
         OptionManager.getInstance().readAll("Option.txt", scan -> new Option());
         PartManager.getInstance().readAll("Part.txt", scan -> new Part());
         CarManager.getInstance().readAll("Car.txt", scan -> {
